@@ -8,6 +8,8 @@ export {
   retryAsync,
   retryAsyncUntilResponse,
   retryAsyncUntilResponseDecorator,
+  retryAsyncUntilDefined,
+  retryAsyncUntilDefinedDecorator,
   retryAsyncUntilTruthy,
   retryAsyncUntilTruthyDecorator,
   retryUntilTruthy,

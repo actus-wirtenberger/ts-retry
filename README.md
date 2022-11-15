@@ -336,11 +336,11 @@ retryAsyncUntilResponseDecorator<PARAMETERS_TYPE, RETURN_TYPE extends { ok: bool
 
 ## Delay family
 
-**createExponetialDelay**
-Returns a delay function that provide exponetial delais
+**createExponentialDelay**
+Returns a delay function that provides exponential delays
 
 ```javascript
-const delay = createExponetialDelay(20);
+const delay = createExponentialDelay(20);
 const result = await retryAsync(
   async () => {
     /* do something */
@@ -352,7 +352,7 @@ const result = await retryAsync(
 delay between each try will return 20, 400, 8000, 160000, 3200000
 
 **createMutiplicableDelay**
-Returns a delay function that provide multiplicated delais:
+Returns a delay function that provides multiplicated delays:
 
 ```typescript
 createMutiplicableDelay<RETURN_TYPE>(initialDelay: number, multiplicator: number)
@@ -374,7 +374,7 @@ delay will be 20, 60, 120, 180, 240
 
 
 **createRandomDelay**
-Returns a delay function that provide radom delais between given min and max (included):
+Returns a delay function that provides radom delays between given min and max (included):
 
 ```typescript
 createRandomDelay<RETURN_TYPE>(min: number, max: number)
@@ -392,7 +392,7 @@ const result = await retryAsync(
 );
 ```
 
-delay betewwen each try will be a random value between 500 and 1000 ms.
+delay between each try will be a random value between 500 and 1000 ms.
 
 ## Wait family
 

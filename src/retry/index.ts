@@ -16,9 +16,9 @@ export {
   retryUntilDefinedDecorator,
   retryUntilTruthy,
   retryUntilTruthyDecorator,
-} from "./utils";
-
-export {
   retryAsyncUntilResponse,
   retryAsyncUntilResponseDecorator,
+  createExponentialDelay,
+  createMutiplicableDelay,
+  createRandomDelay,
 } from "./utils";

@@ -1,6 +1,12 @@
 export { RetryUtilsOptions } from "./options";
 
 export {
+  createExponentialDelay,
+  createMutiplicableDelay,
+  createRandomDelay,
+} from "./delay";
+
+export {
   retryAsyncUntilDefined,
   retryAsyncUntilDefinedDecorator,
   retryUntilDefined,
@@ -19,7 +25,4 @@ export {
   retryAsyncUntilResponseDecorator,
 } from "./untilResponse";
 
-export {
-  retryAsyncDecorator,
-  retryDecorator
-} from './decorators'
+export { retryAsyncDecorator, retryDecorator } from "./decorators";
